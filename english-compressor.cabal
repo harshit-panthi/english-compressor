@@ -18,8 +18,15 @@ common warnings
 executable english-compressor
     import:           warnings
     main-is:          Main.hs
-    -- other-modules:
+    other-modules: Parser
     -- other-extensions:
     build-depends:    base ^>=4.20.2.0
+                    , containers
+                    , heaps
+                    , vector
+                    , megaparsec
+                    , text
+                    , bitvec
+                    , bytestring
     hs-source-dirs:   src
     default-language: GHC2024
